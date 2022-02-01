@@ -5,6 +5,16 @@ import { Technologies } from "./Tech.js";
 import { PaintColors } from "./Paints.js";
 import { Wheels } from "./Wheels.js";
 import { Interiors } from "./Interiors.js";
+import { addCustomOrder } from "./database.js";
+
+document.addEventListener(
+    "click",
+    (event) => {
+        if (event.target.id === "orderButton"){
+            addCustomOrder(event.target.value)
+        }
+    }
+)
 
 export const CarShop = () => {
     return `
