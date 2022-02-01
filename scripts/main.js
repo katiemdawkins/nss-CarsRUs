@@ -1,13 +1,13 @@
-
+import { CarShop } from "./CarShop.js"
 
 
 const mainContainer = document.querySelector("#container")
 
-// const renderAllHTML = () => {
-//     mainContainer.innerHTML = KneelDiamonds()
-// }
+const renderAllHTML = () => {
+    mainContainer.innerHTML = CarShop()
+}
 
-// renderAllHTML()
+renderAllHTML()
 
 // document.addEventListener("stateChanged", event => {
 //     console.log("State of data has changed. Regenerating HTML...")
