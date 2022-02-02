@@ -15,7 +15,7 @@ export const Wheels = () => {
     let html = "<h2>Wheel Options</h2>"
 
     html += '<select id="wheels">'
-    html += '<option value="0">Select a paint color</option>'
+    html += '<option value="0">Select a wheel type</option>'
 
     const arrayOfOptions = theWheels.map( (wheel) => {
             return `<option value="${wheel.id}">${wheel.type}</option>`

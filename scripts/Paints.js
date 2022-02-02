@@ -29,14 +29,5 @@ export const PaintColors = () => {
 
 
 
-// export const thePaintColors = () => {
-//     return `
-//     <select id="paintColor">
-//         <option value="0">Prompt to select resource...</option>
-//         <option value="1">First option</option>
-//         <option value="2">Second option</option>
-//         <option value="3">Second option</option>
-//     </select>
-//     `
-// }
+
 

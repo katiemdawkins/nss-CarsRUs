@@ -14,8 +14,8 @@ const database = {
     interior: [
         {id: 1, fabric: "Beige Fabric", price: 1000},
         {id: 2, fabric: "Charcoal Fabric", price: 1000}, 
-        {id: 3,fabric: "White Leather", price: 1000},
-        {id: 4,fabric: "Black Leather", price: 1000}
+        {id: 3, fabric: "White Leather", price: 1000},
+        {id: 4, fabric: "Black Leather", price: 1000}
     ],
     wheels: [
         {id: 1, type: "17-inch Pair Radial", price: 900},
@@ -29,6 +29,7 @@ const database = {
     orderBuilder: {}
 }
 
+//these functions allow other modules to get copies of the state/data
 export const getPaintColors = () => {
     return database.paintColor.map(color =>({...color}))
 }
@@ -53,10 +54,10 @@ export const setPaintColors = (id) => {
     database.orderBuilder.paintColorId = id
 }
 export const setWheels = (id) => {
-    database.orderBuilder.wheelsId = id 
+    database.orderBuilder.wheelId = id 
 }
 export const setInteriors = (id) => {
-    database.orderBuilder.interiorsId = id
+    database.orderBuilder.interiorId = id
 }
 
 export const setTechnology = (id) => {
